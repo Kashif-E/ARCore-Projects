@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+        <TextView
+            android:id="@+id/ArAvailabilityCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="404dp"
+            android:gravity="center"
+            android:text="@string/wow_you_can_use_ar"
+            android:textSize="28sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.286" />
+
+        <Button
+            android:id="@+id/SceneVIewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/view_in_scene_view"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/btn3D"
+            app:layout_constraintStart_toStartOf="@+id/btn3D"
+            app:layout_constraintTop_toBottomOf="@+id/btn3D" />
+
+        <Button
+            android:id="@+id/btn3D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/view_in_3D"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/ArAvailabilityCheck"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ArAvailabilityCheck" />
+
+        <ProgressBar
+            android:id="@+id/ArProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/btn3D"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/btn3D"
+            app:layout_constraintTop_toBottomOf="@+id/btnAR" />
+
+        <Button
+            android:id="@+id/btnAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/view_in_ar"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/SceneVIewButton"
+            app:layout_constraintStart_toStartOf="@+id/SceneVIewButton"
+            app:layout_constraintTop_toBottomOf="@+id/SceneVIewButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

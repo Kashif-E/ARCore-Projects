@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AugmentedFacesSceneForm</string>
+    <string name="camerabutton">cameraButton</string>
+    <string name="title">How Long Will you live?</string>
+</resources>

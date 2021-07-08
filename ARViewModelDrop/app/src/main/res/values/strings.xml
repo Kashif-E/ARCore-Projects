@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ARViewModelDrop</string>
+    <string name="unavaialabe">ArCore Not Available</string>
+    <string name="ARCoreStatus">Arcore Installed</string>
+    <string name="camera_permision_required">Camera permission is needed to run this application</string>
+    <string name="arcore_not_installed">ArCore Not Installed</string>
+    <string name="arcore_required">You Need ARCore To Use AR</string>
+    <string name="view_in_scene_view">View In Scene View</string>
+    <string name="view_in_ar">View In AR</string>
+    <string name="view_in_3D">View In 3D</string>
+    <string name="wow_you_can_use_ar">Wow You Can Use AR</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

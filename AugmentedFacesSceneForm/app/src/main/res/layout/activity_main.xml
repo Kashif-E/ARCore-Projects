@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:name="com.infinity.augmentedfacessceneform.customfragment.FaceFragment"
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/yellow"
+            android:src="@drawable/ic_camera"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:rippleColor="@android:color/holo_red_light"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/camerabutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/bottomSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgray"
+            android:orientation="horizontal"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/blacl"
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/yellow"
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/blacl"
+                        app:layout_constraintStart_toEndOf="@+id/blacl"
+                        app:layout_constraintTop_toTopOf="@+id/blacl"
+                        app:srcCompat="@drawable/yellow" />
+
+                    <ImageView
+                        android:id="@+id/filter"
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/yellow"
+                        app:layout_constraintStart_toEndOf="@+id/yellow"
+                        app:layout_constraintTop_toTopOf="@+id/yellow"
+                        app:srcCompat="@drawable/makeup" />
+
+                    <ImageView
+                        android:id="@+id/freckle"
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/filter"
+                        app:layout_constraintStart_toEndOf="@+id/filter"
+                        app:layout_constraintTop_toTopOf="@+id/filter"
+                        app:srcCompat="@drawable/freckles" />
+
+                    <ImageView
+                        android:id="@+id/clown"
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/freckle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/freckle"
+                        app:layout_constraintTop_toTopOf="@+id/freckle"
+                        app:srcCompat="@drawable/clown_face_mesh_texture" />
+
+                    <ImageView
+                        android:id="@+id/foxface"
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/clown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/clown"
+                        app:layout_constraintTop_toTopOf="@+id/clown"
+                        app:srcCompat="@drawable/black" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

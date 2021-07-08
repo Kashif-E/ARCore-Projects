@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.infinity.modelviewerapp.ui.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_modelListFragment"
+            app:destination="@id/modelListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modelListFragment"
+        android:name="com.infinity.modelviewerapp.ui.ModelListFragment"
+        android:label="fragment_model_list"
+        tools:layout="@layout/fragment_model_list" >
+        <argument
+            android:name="model"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_modelListFragment_to_modelViewFragment"
+            app:destination="@id/modelViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modelViewFragment"
+        android:name="com.infinity.modelviewerapp.ui.ModelViewFragment"
+        android:label="ModelViewFragment" />
+
+</navigation>

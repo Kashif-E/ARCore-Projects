@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "945133097965",
+    "firebase_url": "https://modelviewerapp.firebaseio.com",
+    "project_id": "modelviewerapp",
+    "storage_bucket": "modelviewerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945133097965:android:e5a5aab761002a63048de4",
+        "android_client_info": {
+          "package_name": "com.infinity.modelviewerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945133097965-0cq8d1acruod7jlafkmcvis5idgrfl0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_39mrvpB5WgvtjInrW6J8weuchYpSAPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945133097965-0cq8d1acruod7jlafkmcvis5idgrfl0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

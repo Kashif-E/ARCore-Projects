@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShapeFactory</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="create_node">Create Node</string>
+    <string name="no_node_created_yet">no node created yet</string>
+    <string name="sphere">Sphere</string>
+    <string name="cube">Cube</string>
+    <string name="cylinder">Cylinder</string>
+    <string name="add_x_y_an_z_values_in_accordance_to_node_1">Add X Y an Z values in accordance to node 1</string>
+
+</resources>
